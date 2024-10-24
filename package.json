@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@midudev/tailwind-animations": "^0.1.0",
     "dotenv": "^16.4.5",
     "next": "14.2.15",
