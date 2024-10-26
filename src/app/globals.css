@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #0A0A0A;
+  --background: #0a0a0a ;
   --foreground: #171717;
-  --text:#ededed;
-  --marked-text: #EBF29C;
+  --text:#fff;
+  --marked-text: #B7E4C7;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -31,9 +31,9 @@
 
 body {
   font-family: "Geist-Sans", 'sans-serif';
-  background: #0a0a0a;
+  background: var(--background);
   background-size: cover;
-  color:var(--text);
+  color: var(--text);
 }
 
 @layer utilities {
