@@ -6,27 +6,32 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xkndqpjd");
   if (state.succeeded) {
       return (
-      <div>
-        <p>Thanks for joining!</p>
-        <Link href="/">Go back</Link>
+      <div className='min-h-screen flex items-center justify-center'>
+        <div className='flex flex-col items-center place-content-center justify-center gap-4'>
+              <span className='text-4xl font-bold'>¡Gracias por contactarnos!</span>
+              <button className='p-4 text-black bg-white border hover:bg-black hover:text-white active:bg-[var(--marked-text)] 
+              active:text-black transition-all duration-600'>
+                <Link href="/">Go Back</Link>
+              </button>
+        </div>
       </div>
       );
   }
   return (
     <>
-    <div id='main-container' className='min-h-screen flex items-center justify-center'>
+    <div id='main-container' className='min-h-screen flex items-start justify-center'>
       <div id='form-container' className='flex justify-center flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 text-white'>
           <div id='header' className='flex flex-row justify-center'>
             <div>
               {/* image */}
             </div>
-            <h2 className='text-3xl font-bold my-auto '>
+            <h2 className='text-4xl font-bold my-auto '>
               Contacto
             </h2>
           </div>
 
           <div className='text-sm font-light pb-8 '>
-            <p className='text-center'>Envianos un mensaje para ponernos en contacto</p>
+            <p className='text-center'>¡Entremos en contacto!</p>
           </div>
           <form 
             onSubmit={handleSubmit}
@@ -61,7 +66,7 @@ function ContactForm() {
             />
             <button type="submit"  
                     disabled={state.submitting} 
-                    className='p-6 my-4 bg-white text-black border rounded-lg hover:bg-black hover:text-white transition-all duration-600'>
+                    className='p-6 my-4 bg-white text-black border rounded-lg hover:bg-black hover:text-white active:bg-[var(--marked-text)] active:text-black transition-all duration-600'>
               Submit
             </button>
           </form>

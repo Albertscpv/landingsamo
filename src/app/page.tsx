@@ -11,15 +11,11 @@ export default function Home() {
                   <b className="[color:var(--marked-text)]">Innovación</b> en soluciones, <b className="[color:var(--marked-text)]">Eficiencia</b> en resultados.
                 </span>
               <Link href="/about">
-                <button className="p-4 bg-[#ededed] text-black my-6 border hover:bg-black hover:text-white transition duration-600 hover:border animate-fade-in-right">
+                <button className="p-4 bg-[#ededed] text-black my-6 border hover:bg-black hover:text-white active:bg-[var(--marked-text)] active:text-black transition duration-600 hover:border animate-fade-in-right">
                   Get Started
                 </button>
               </Link>
           </div>
-
-          {/* General info and preview about our employees and portflio */}
-          {/* Preview to go into our services */}
-          {/* Our contact info */}
         </div>
     </div>
   );
