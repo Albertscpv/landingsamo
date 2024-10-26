@@ -6,7 +6,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("xkndqpjd");
   if (state.succeeded) {
       return (
-      <div className='min-h-screen flex items-center justify-center'>
+      <div className='min-h-screen flex items-center justify-center animate-fade-in-right'>
         <div className='flex flex-col items-center place-content-center justify-center gap-4'>
               <span className='text-4xl font-bold'>¡Gracias por contactarnos!</span>
               <button className='p-4 text-black bg-white border hover:bg-black hover:text-white active:bg-[var(--marked-text)] 
@@ -19,7 +19,7 @@ function ContactForm() {
   }
   return (
     <>
-    <div id='main-container' className='min-h-screen flex items-start justify-center'>
+    <div id='main-container' className='min-h-screen flex items-start justify-center animate-fade-in-right'>
       <div id='form-container' className='flex justify-center flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 text-white'>
           <div id='header' className='flex flex-row justify-center'>
             <div>
