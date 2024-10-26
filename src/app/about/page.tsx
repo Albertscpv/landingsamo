@@ -1,6 +1,6 @@
 const About = () => {
     return(
-        <div className="min-h-screen p-4 flex flex-col gap-10 animate-fade-in">
+        <div className="min-h-screen p-4 flex flex-col gap-10 animate-fade-in text-justify">
             <h2 className="font-bold text-4xl my-2">Acerca de Samo D</h2>
             <p className="">La búsqueda de soluciones es una parte esencial del crecimiento de una empresa o compañía. Nuestra filosofía se basa en buscar siempre una solución a los problemas que surgen con el día a día. Buscamos solucionar aquellos inconvenientes que puedan surgir a la hora de crear una empresa e incentivar a los pequeños empresarios en el mundo digital y mantenerlos actualizados sobre lo que actualmente puede ser mejor o no para ellos.
             </p>
