@@ -15,10 +15,10 @@ const About = () => {
                 </div>
             </div>
             <h2 className="font-bold text-4xl my-2">Nuestra Visión</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis dolor nulla tempore nemo maxime magnam unde magni, beatae laboriosam possimus doloremque quos nisi neque voluptatum. Illo itaque vero dignissimos!</p>
+            <p>El éxito es algo que se consigue con el tiempo y nos vemos como la principal agencia de confianza para todos los emprendedores y para aquellos que buscan crecer. </p>
 
             <h2 className="font-bold text-4xl my-2">Nuestra Misión</h2>
-            <p> No hay un No por respuesta, nuestro propósito es dar a todos los emprendedores y empresarios soluciones a sus problemas, nunca recibirás un <b>No</b> como primera respuesta, siempre buscaremos soluciones y hasta entonces, resolver problemas.</p>
+            <p>Para cumplir los propósitos y metas hay que trabajar duro y progresar. Nuestra misión es guiar a los emprendedores en busca del éxito, nunca existirá un <b className="text-[var(--marked-text)]">no</b> por respuesta.</p>
 
             <h2 className="font-bold text-4xl my-2">Nuestros Valores</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis dolor nulla tempore nemo maxime magnam unde magni, beatae laboriosam possimus doloremque quos nisi neque voluptatum. Illo itaque vero dignissimos!</p>
