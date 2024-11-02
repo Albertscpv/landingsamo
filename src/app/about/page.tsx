@@ -1,6 +1,13 @@
+import Image from "next/image"
+
+import apertura from "@/app/assets/apertura.png"
+import agujero from "@/app/assets/agujero.png"
+import nebulosa from "@/app/assets/nebulosa.png"
+import landing from "@/app/assets/landing1.png"
+
 const About = () => {
     return(
-        <div className="min-h-screen p-4 flex flex-col gap-10 animate-fade-in text-justify">
+        <div className="min-h- p-4 flex flex-col gap-10 animate-fade-in text-justify">
             <h2 className="font-bold text-4xl my-2">Acerca de Samo D</h2>
             <p className="">La búsqueda de soluciones es esencial para el crecimiento de cualquier empresa. Así como las raíces de un árbol buscan su espacio en la tierra, nuestra filosofía se centra en encontrar siempre una respuesta sólida a los desafíos que surgen en el día a día. 
             <br />
@@ -9,12 +16,13 @@ const About = () => {
             </p>
             <div className="flex flex-col gap-5">
                 <div className="flex w-[100%] justify-between gap-5">
-                    <img src="" alt="1" />
-                    <img src="" alt="2" />
+                    <Image src={apertura} alt="img" className="w-[35%] object-contain rounded " />
+                    <Image src={agujero} alt="img" className="w-[65%] rounded" />
+
                 </div>
                 <div className="flex w-[100%] gap-5 justify-between">
-                    <img src="" alt="3" />
-                    <img src="" alt="4" />
+                    <Image src={nebulosa} alt="3" className="w-[65%] rounded" />
+                    <Image src={landing} alt="4" className="w-[35%] rounded" />
                 </div>
             </div>
             <h2 className="font-bold text-4xl my-2">Nuestra Visión</h2>
@@ -30,6 +38,17 @@ const About = () => {
             <p>
             Nos guiamos por los valores de responsabilidad, confianza, respeto, paciencia y perseverancia. Estos principios son la base de nuestra relación con cada cliente, ayudándolos a avanzar con seguridad y constancia en su camino hacia el éxito.
             </p>
+            <div className="flex flex-col gap-5">
+                <div className="flex w-[100%] justify-between gap-5">
+                    <Image src={apertura} alt="img" className="w-[35%] object-contain rounded " />
+                    <Image src={agujero} alt="img" className="w-[65%] rounded" />
+
+                </div>
+                <div className="flex w-[100%] gap-5 justify-between">
+                    <Image src={nebulosa} alt="3" className="w-[65%] rounded" />
+                    <Image src={landing} alt="4" className="w-[35%] rounded" />
+                </div>
+            </div>
         </div>
 
     )
