@@ -55,3 +55,8 @@ body {
 textarea{
   resize: none;
 }
+
+#container-services{
+  display: flex;
+  flex-wrap: wrap;
+}
