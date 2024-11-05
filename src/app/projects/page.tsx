@@ -14,7 +14,7 @@ const ProjectPage = () =>{
     const [projects, setProjects] = useState([]);
 
     useEffect(()=>{
-        fetch("https://api.github.com/users/albertscpv/repos")
+        fetch("https://api.github.com/users/samospace/repos")
             .then((response) => response.json())
             .then((data) => setProjects(data));
     }, ([]))
