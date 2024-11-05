@@ -6,8 +6,10 @@ import supernova from "@/app/assets/supernova.jpg";
 
 const Services = () => {
     return (
+
+        
         <div className="min-h-screen mx-2 p-4 flex flex-col gap-10 animate-fade-in">
-            <h2 className="font-bold text-4xl animate-fade-in-up">
+            <h2 className="font-bold text-4xl transition-all duration-1000 animate-fade-in-up">
                 Conozca nuestros servicios: 
             </h2>
             <div className="flex flex-wrap justify-between text-white gap-4">
