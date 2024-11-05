@@ -20,6 +20,7 @@ const ProjectPage = () =>{
     }, ([]))
     return(
         <>
+        <div className="min-h-screen p-4">
         {projects.length >= 1? (
             <section>
                 <h2>Conozca nuestros proyectos de desarrollo:</h2>
@@ -45,6 +46,7 @@ const ProjectPage = () =>{
             <Loader/>
         )
     }
+        </div>
         </>
     )
 }
