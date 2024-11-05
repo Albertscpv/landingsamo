@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
+import Image from "next/image"
+import Gargantua from "@/app/assets/gargantua.jpg"
 
 interface project{
     name: string;
@@ -23,12 +25,12 @@ const ProjectPage = () =>{
                 <h2>Conozca nuestros proyectos de desarrollo:</h2>
                 <div>
                     <div className="grid md:grid-cols-[1fr_1fr] gap-5 text-[14px] my-6">
-                        {projects.map((project : project) =>(
-                            <a key={project.name} href={project.html_url} target="_blank">
+                        {projects.map((project : project) => (
+                            <a key={project.name} href={project.html_url} target="_blank" className="p-2">
                                 <div
-                                    className="flex items-center p-3 justify-between bg-[#262626]  border-2 border-white rounded-md min-h-[100px]"
+                                    className="flex items-center p-4 justify-between bg-[#262626] border-2 border-white rounded-md min-h-[100px] "
                                 >
-                                    <div className="text-left">
+                                    <div className="text-left ">
                                         <p>{project.name}</p>
                                         <p>{project.description}</p>
                                     </div>
