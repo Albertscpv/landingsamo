@@ -31,8 +31,8 @@ const ProjectPage = () =>{
                                     className="flex items-center p-4 justify-between bg-[#262626] border-2 border-white rounded-md min-h-[100px] "
                                 >
                                     <div className="text-left ">
-                                        <p>{project.name}</p>
-                                        <p>{project.description}</p>
+                                        <p className="font-bold text-2xl mb-4">{project.name}</p>
+                                        <p className="text-lg">{project.description}</p>
                                     </div>
                                     {/* icon */}
                                 </div>
