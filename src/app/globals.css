@@ -3,29 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a ;
+  --background: #191919 ;
   --foreground: #171717;
   --text:#fff;
-  --marked-text: #32BA76;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 @font-face {
-  font-family: "Geist-Mono";
-  src: url(../app/fonts/GeistMonoVF.woff);
-  font-weight: 100 900;
+  font-family: "Mono-Regular";
+  src: url(./font/Mono/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Geist-Sans";
-  src: url(../app/fonts/GeistVF.woff);
-  font-weight: 100 900;
+  font-family: "Inter";
+  src: url(./font/Mono/Inter/static/Inter_18pt-Medium.ttf);
   font-style: normal;
 }
 
@@ -36,27 +27,18 @@ body {
   color: var(--text);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-#main-container{
+#home{
   display: grid;
   width: full;
-  grid-template-areas: "main"
-                       "main";
+  grid-template-areas: "main s-main"
+                       "main s-main"
+                       "team team"
+                       "team team"
+                       
+                       ;
   grid-template-columns: 2fr;
   grid-template-rows: 2fr;
   place-content: center;
   justify-items: center;
 }
-textarea{
-  resize: none;
-}
 
-#container-services{
-  display: flex;
-  flex-wrap: wrap;
-}

@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        geist: ['Geist-Mono', 'sans-serif'],
-        geistS: ['Geist-Sans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        mono: ['Mono-Regular', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",

@@ -1,22 +1,58 @@
-import Link from "next/link"
+import Image from "next/image"
+import { MicroscopeIcon } from "lucide-react"
+import Header from "./components/Header"
+import Banner from "./components/Banner"
+import CodeComponent from "./components/CodeComponent"
 
-export default function Home() {
 
+export default function WelcomePage() {
   return (
-    <div className="min-h-screen">
-        <div id="main-container" className="relative h-screen p-2">
-          <div className="[grid-area:main] p-12 place-content-center text-center">
-              <h2 className="font-bold text-6xl font-geistS text-white  animate-fade-in">Bienvenidos a <b className="[color:var(--marked-text)]">Samo D</b></h2>
-              <span className="block text-xl my-2">
-                  <b className="[color:var(--marked-text)]">Innovación</b> en soluciones, <b className="[color:var(--marked-text)]">Eficiencia</b> en resultados.
-                </span>
-              <Link href="/about">
-                <button className="p-4 bg-[#ededed] text-black my-6 border hover:bg-black hover:text-white active:bg-[var(--marked-text)] active:text-black transition duration-600 hover:border animate-fade-in-right">
-                  Get Started
-                </button>
-              </Link>
+    <div className="min-h-screen text-white font-inter">
+      {/* Header */}
+          <Header/>
+      {/* Banner */}
+      <Banner/>
+
+      {/* Main Content */}
+      <main className="p-8">
+        <div className="mb-8">
+          <MicroscopeIcon className="w-12 h-12 text-gray-400" />
+        </div>
+        <h1 className="text-4xl font-mono mb-8">Welcome to Samo</h1>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Code Section */}
+            <CodeComponent/>
+          {/* Image Section */}
+          <div className="relative h-[400px]">
+            <Image
+              src="/rocket.jpg"
+              alt="Rocket launch trail"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div className="relative h-[400px]">
+            <Image
+              src="/Arte.jpeg"
+              alt="Rocket launch trail"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div>
+            <h2 className="font-mono text-2xl mb-4">My Goals: </h2>
+            <ul className="list-disc space-y-2 pl-6 font-mono">
+              <li>I want to be a place of trust for all entrepreneurs who want to emerge. </li>
+              <li>Help, share and teach everyone about the future and the digital world.</li>
+              <li>Knowing the world and the amazing things it hides.</li>
+              <li>Being one of the largest companies helping people to be people.</li>
+            </ul>
           </div>
         </div>
+      </main>
     </div>
-  );
+  )
 }
+
