@@ -19,6 +19,7 @@ export default function WelcomePage() {
           <MicroscopeIcon className="w-12 h-12 text-gray-400" />
         </div>
         <h1 className="text-4xl font-mono mb-8">Welcome to Samo</h1>
+        <hr className="mb-4"/>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Code Section */}
             <CodeComponent/>
@@ -43,6 +44,7 @@ export default function WelcomePage() {
           </div>
           <div>
             <h2 className="font-mono text-2xl mb-4">My Goals: </h2>
+            <hr className="mb-4"/>
             <ul className="list-disc space-y-2 pl-6 font-mono">
               <li>I want to be a place of trust for all entrepreneurs who want to emerge. </li>
               <li>Help, share and teach everyone about the future and the digital world.</li>
