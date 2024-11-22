@@ -21,24 +21,7 @@
 }
 
 body {
-  font-family: "Geist-Sans", 'sans-serif';
   background: var(--background);
-  background-size: cover;
   color: var(--text);
-}
-
-#home{
-  display: grid;
-  width: full;
-  grid-template-areas: "main s-main"
-                       "main s-main"
-                       "team team"
-                       "team team"
-                       
-                       ;
-  grid-template-columns: 2fr;
-  grid-template-rows: 2fr;
-  place-content: center;
-  justify-items: center;
 }
 
