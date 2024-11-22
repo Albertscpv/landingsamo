@@ -18,7 +18,7 @@ export default function WelcomePage() {
         <div className="mb-8">
           <MicroscopeIcon className="w-12 h-12 text-gray-400" />
         </div>
-        <h1 className="text-4xl font-mono mb-8">Welcome to Samo</h1>
+        <h1 className="text-4xl font-mono font-bold mb-8">Welcome to Samo</h1>
         <hr className="mb-4"/>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Code Section */}
@@ -44,7 +44,7 @@ export default function WelcomePage() {
           </div>
           <div>
           <div>
-            <h2 className="text-2xl mb-4">My Goals: </h2>
+            <h2 className="text-2xl font-bold mb-4">My Goals: </h2>
             <hr className="mb-4"/>
             <ul className="list-disc space-y-2 pl-6 mb-4">
               <li>I want to be a place of trust for all entrepreneurs who want to emerge. </li>
@@ -54,7 +54,7 @@ export default function WelcomePage() {
             </ul>
           </div>
             <div>
-              <h2 className="text-2xl mb-4">What we do?</h2>
+              <h2 className="text-2xl font-bold mb-4">What we do?</h2>
             <hr className="mb-4"/>
               <p>I’m am a very diverse company that seeks to meet many needs of entrepreneurs.</p>
               <ul className="list-disc space-y-2 pl-6 m-4">
@@ -65,9 +65,38 @@ export default function WelcomePage() {
               </ul>
             </div>
           </div>
-          <div>
-            <h2>Some services that we offer: </h2>
+          <div className="my-4">
+            <h2 className="text-2xl font-bold mb-4">Some services that we offer: </h2>
           </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Our Team</h2>
+          <hr className="mb-6"/>
+          <p>Well, big things need big minds</p>
+        <div className="grid md:grid-cols-2 gap-8 my-6">
+            <div>
+              <Image
+                src="/CharlaCTPE.webp"
+                alt="Rocket launch trail"
+                width={600}
+                height={500}
+                className="w-full h-full object-cover rounded-lg"
+              />
+              <h2>Christopher Monge, Albert</h2>
+              <p></p>
+            </div>
+            <div>
+              <Image
+                src="/SunFlowers.webp"
+                alt="Rocket launch trail"
+                width={600}
+                height={500}
+                className="w-full h-full object-cover rounded-lg"
+              />
+              <h2>Susana Porras, Sunny</h2>
+              <p></p>
+            </div>
+        </div>
         </div>
       </main>
     </div>
