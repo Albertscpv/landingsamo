@@ -65,10 +65,11 @@ export default function WelcomePage() {
               </ul>
             </div>
           </div>
-          <div className="my-4">
-            <h2 className="text-2xl font-bold mb-4">Some services that we offer: </h2>
-          </div>
         </div>
+        <div className="my-4">
+            <h2 className="text-2xl font-bold mb-4">Some services that we offer: </h2>
+          <hr className="mb-6"/>
+          </div>
         <div>
           <h2 className="text-2xl font-bold mb-4">Our Team</h2>
           <hr className="mb-6"/>
