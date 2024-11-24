@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Mono-Bold";
+  src: url(./font/Mono/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
+  font-style: normal;
+}
+
 body {
   background: var(--background);
   color: var(--text);

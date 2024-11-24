@@ -4,24 +4,32 @@ const CodeComponent = () => {
       <pre className="text-white">
         <code>
           <span className="text-[#C586C0]">const</span>{" "}
-          <span className="text-[#DCDCAA]">Greetings</span> = () =&gt; {"{"}
+          <span className="text-[#DCDCAA]">Saludos</span> = () =&gt; {"{"}
           {"\n"}  <span className="text-[#C586C0]">return</span> (
           {"\n"}    {"<>"}
-          {"\n"}      {"<h2>"}Welcome to my HQ{"</h2>"}
+          {"\n"}      {"<h2>"}Saludos a todos, {"</h2>"}
           {"\n"}      {"<p>"}
-          {"\n"}        Here you will see how we work and the future
-          {"\n"}        projects that we will develop to make efficient your
-          {"\n"}        life.
+          {"\n"}        En este lugar encontrarás las cosas que nos identifican 
+          {"\n"}        y por lo que 
+          {"\n"}        estaremos trabajando durante el tiempo que decidan 
+          {"\n"}        darme su confianza.
+          {"\n"}        
+          {"\n"}        ¿Porqué me refiero a Samo como si fuese alguien?
+          {"\n"}        
+          {"\n"}        Hemos decidido que haremos de Samo algo más que un 
+          {"\n"}        simple nombre, lo haremos una referencia y 
+          {"\n"}        
+          {"\n"}        Como lo dice la  frase: 
           {"\n"}      {"</p>"}
           {"\n"}      {"<span>"}
-          {"\n"}        Innovation in solutions, Efficiency in results.
+          {"\n"}        Noblesse Oblige
           {"\n"}      {"</span>"}
+          {"\n"}      Usa tus fortalezas, para ayudar a otros.
           {"\n"}    {"</>"}
           {"\n"}  )
           {"\n"}{"}"}
         </code>
       </pre>
-      <p className="mt-8 text-gray-400 italic">Can you find the mistake?</p>
     </div>
   );
 };

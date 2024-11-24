@@ -12,6 +12,7 @@ module.exports = {
       fontFamily:{
         inter: ['Inter', 'sans-serif'],
         mono: ['Mono-Regular', 'sans-serif'],
+        monoBold: ['Mono-Bold', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",
