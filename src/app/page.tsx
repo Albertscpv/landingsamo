@@ -58,26 +58,35 @@ export default function WelcomePage() {
             </ul>
           </div>
             <div>
-              <h2 className="text-2xl font-bold mb-4">What we do?</h2>
+              <h2 className="text-2xl font-bold mb-4">Qué soy capaz de hacer?</h2>
             <hr className="mb-4"/>
-              <p>I’m am a very diverse company that seeks to meet many needs of entrepreneurs.</p>
+              <p>Fui creado con el fin de ayudar a todas las personas que lo requieran. Entre 
+                las cosas que puedo hacer están: 
+              </p>
               <ul className="list-disc space-y-2 pl-6 m-4">
-                <li>Graphic Desing</li>
-                <li>Web Design</li>
-                <li>Software Development</li>
-                <li>Digital Marketing</li>
+                <li><b>Diseño Gráfico</b>, por si quieres flyers o recursos para tu negocio.</li>
+                <li><b>Diseño Web</b>, para que te adentres en el mundo digital de una mejor manera.</li>
+                <li><b>Desarrollo de Software</b>, ¿Tienes una idea para solucionar algo y quieres ayuda para crearla?</li>
+                <li><b>Marketing Digital</b>, por si lo tuyo es impulsar tu negocio en redes.</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="my-4">
-            <h2 className="text-2xl font-bold mb-4">Some services that we offer: </h2>
+            <h2 className="text-2xl font-bold mb-4">Otras cosas en las que puedo ayudarte: </h2>
           <hr className="mb-6"/>
+          <ul className="list-disc space-y-2 pl-6 m-4">
+            <li>Fotografia, me estoy especializando, próximamente tendrán a Samo F.</li>
+            <li>Eventos especiales, para hacer tus fechas inolvidables</li>
+            <li>Charlas de aprendizaje, el <b><i>Dev</i></b> se encargará de ello.</li>
+            <li>Arte, pinturas o dibujos. Para plasmar recuerdos de una forma preciosa.</li>
+            <li>¿Eres gamer y te gusta hacer streams? Podemos ayudarte con moderadores e interfaces diseñadas.</li>
+          </ul>
           </div>
         <div>
           <h2 className="text-2xl font-bold mb-4">Our Team</h2>
           <hr className="mb-6"/>
-          <p>Well, big things need big minds</p>
+          <p>Realmente somos un equipo pequeño, que con el tiempo irá creciendo. ¿Te gustaría formar parte?</p>
         <div className="grid md:grid-cols-2 gap-8 my-6">
             <div className="flex flex-col gap-4">
               <Image
@@ -87,7 +96,8 @@ export default function WelcomePage() {
                 height={500}
                 className="w-full h-full object-cover rounded-lg"
               />
-              <h2 className="pl-4 font-monoBold">Christopher Monge</h2>
+              <h2 className="pl-4 font-monoBold">Christopher Monge, el Dev</h2>
+              <p>Me considero una persona proactiva, que ama conversar y buscarle soluciones a problemas, algo difíciles.</p>
             </div>
             <div className="flex flex-col gap-4"> 
               <Image
@@ -95,9 +105,10 @@ export default function WelcomePage() {
                 alt="Rocket launch trail"
                 width={600}
                 height={500}
-                className="w-full h-full min-w-[50%] object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg"
               />
-              <h2 className="pl-4 font-monoBold">Susana Porras</h2>
+              <h2 className="pl-4 font-monoBold">Susana Porras, la Artista</h2>
+              <p></p>
             </div>
         </div>
         </div>

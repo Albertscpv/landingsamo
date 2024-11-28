@@ -31,3 +31,10 @@ body {
   color: var(--text);
 }
 
+/* styles.css */
+.custom-shadow {
+  @apply rounded-[25px] bg-[#191919];
+  box-shadow: inset 9px 9px 18px #0a0a0a, inset -9px -9px 18px #282828;
+}
+
+
