@@ -31,10 +31,15 @@ body {
   color: var(--text);
 }
 
-/* styles.css */
+/* custom styles */
 .custom-shadow {
   @apply rounded-[25px] bg-[#191919];
   box-shadow: inset 9px 9px 18px #0a0a0a, inset -9px -9px 18px #282828;
+}
+
+.custom-white {
+  @apply rounded-[25px] bg-white;
+  box-shadow: inset 9px 9px 18px #d9d9d9, inset -9px -9px 18px #ffffff;
 }
 
 

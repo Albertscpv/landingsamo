@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
     <div>
@@ -8,12 +10,14 @@ const Header = () => {
           <span>Welcome to Samo</span>
         </div>
         <div className="flex items-center gap-4 text-gray-400">
-          {/* <span>Última edición: Hace 1 m</span>
-          <button>Compartir</button>
+          <Link  href="#contacto">
+            <button className="px-4 py-2 bg-white text-black rounded-lg transition-all duration-900 hover:bg-[var(--background)] hover:text-white">
+              Contactanos
+            </button>
+          </Link>
           <button>💬</button>
           <button>🕒</button>
           <button>⭐</button>
-          <button>⋯</button> */}
         </div>
       </header>
     </div>
