@@ -1,19 +1,18 @@
-import Image from "next/image"
-import { MicroscopeIcon } from "lucide-react"
-import Header from "./components/Header"
-import Banner from "./components/Banner"
-import CodeComponent from "./components/CodeComponent"
-import Portafolio from "./components/Portafolio"
+import Image from "next/image";
+import { MicroscopeIcon } from "lucide-react";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import CodeComponent from "./components/CodeComponent";
+import Portafolio from "./components/Portafolio";
 
 
 export default function WelcomePage() {
   return (
     <div className="min-h-screen text-white font-inter">
       {/* Header */}
-          <Header/>
+      <Header/>
       {/* Banner */}
       <Banner/>
-
       {/* Main Content */}
       <main className="p-8 font-inter">
         <div className="mb-8 flex justify-center">
@@ -29,28 +28,28 @@ export default function WelcomePage() {
           {/* Code Section */}
             <CodeComponent/>
           {/* Image Section */}
-          <div className="relative h-[400px]">
-            <Image
-              src="/mainImages/rocket.jpg"
-              alt="Rocket launch trail"
-              width={600}
-              height={400}
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-          <div className="relative h-[500px]">
-            <Image
-              src="/mainImages/Arte.jpeg"
-              alt="Rocket launch trail"
-              width={600}
-              height={500}
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
+            <div className="relative h-[400px]">
+              <Image
+                src="/mainImages/rocket.jpg"
+                alt="Rocket launch trail"
+                width={600}
+                height={400}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <div className="relative h-[500px]">
+              <Image
+                src="/mainImages/Arte.jpeg"
+                alt="Rocket launch trail"
+                width={600}
+                height={500}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           <div>
           <div>
             <h2 className="text-2xl font-bold mb-4">Mi propósito: </h2>
-            <hr className="mb-4"/>
+              <hr className="mb-4"/>
             <ul className="list-disc space-y-2 pl-6 mb-4">
               <li>Ayudar a todos los emprendedores y pequeños negocios a hacerse ver en el mundo digital.</li>
               <li>Help, share and teach everyone about the future and the digital world.</li>
@@ -76,16 +75,17 @@ export default function WelcomePage() {
         <div className="my-4">
             <h2 className="text-2xl font-bold mb-4">Otras cosas en las que puedo ayudarte: </h2>
           <hr className="mb-6"/>
-          <ul className="list-disc space-y-2 pl-6 m-4">
-            <li>Fotografia, me estoy especializando, próximamente tendrán a Samo F.</li>
-            <li>Eventos especiales, para hacer tus fechas inolvidables</li>
-            <li>Charlas de aprendizaje, el <b><i>Dev</i></b> se encargará de ello.</li>
-            <li>Arte, pinturas o dibujos. Para plasmar recuerdos de una forma preciosa.</li>
-            <li>¿Eres gamer y te gusta hacer streams? Podemos ayudarte con moderadores e interfaces diseñadas.</li>
-          </ul>
+            <ul className="list-disc space-y-2 pl-6 m-4">
+              <li>Fotografia, me estoy especializando, próximamente tendrán a Samo F.</li>
+              <li>Eventos especiales, para hacer tus fechas inolvidables</li>
+              <li>Charlas de aprendizaje, el <b><i>Dev</i></b> se encargará de ello.</li>
+              <li>Arte, pinturas o dibujos. Para plasmar recuerdos de una forma preciosa.</li>
+              <li>¿Eres gamer y te gusta hacer streams? Podemos ayudarte con moderadores e interfaces diseñadas.</li>
+              <li>Figuras y diseño 3D, en algo podrían ser de utilidad. </li>
+            </ul>
           </div>
         <div>
-          <h2 className="text-2xl font-bold mb-4">Our Team</h2>
+          <h2 className="text-2xl font-bold mb-4">Nuestro equipo: </h2>
           <hr className="mb-6"/>
           <p>Realmente somos un equipo pequeño, que con el tiempo irá creciendo. ¿Te gustaría formar parte?</p>
         <div className="grid md:grid-cols-2 gap-8 my-6">
