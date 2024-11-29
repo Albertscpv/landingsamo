@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="">
+        className="font-inter">
         <div className="">
           {children}
         </div>

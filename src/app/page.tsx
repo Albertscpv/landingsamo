@@ -3,6 +3,7 @@ import { MicroscopeIcon } from "lucide-react"
 import Header from "./components/Header"
 import Banner from "./components/Banner"
 import CodeComponent from "./components/CodeComponent"
+import Portafolio from "./components/Portafolio"
 
 
 export default function WelcomePage() {
@@ -14,7 +15,7 @@ export default function WelcomePage() {
       <Banner/>
 
       {/* Main Content */}
-      <main className="p-8 font-mono">
+      <main className="p-8 font-inter">
         <div className="mb-8 flex justify-center">
           <MicroscopeIcon className="w-12 h-12 text-gray-400" />
         </div>
@@ -96,7 +97,7 @@ export default function WelcomePage() {
                 height={500}
                 className="w-full h-full object-cover rounded-lg"
               />
-              <h2 className="pl-4 font-monoBold">Christopher Monge, el Dev</h2>
+              <h2 className="pl-4 font-inter font-bold">Christopher Monge, el Dev</h2>
               <p>Me considero una persona proactiva, que ama conversar y buscarle soluciones a problemas, algo difíciles.</p>
             </div>
             <div className="flex flex-col gap-4"> 
@@ -107,10 +108,11 @@ export default function WelcomePage() {
                 height={500}
                 className="w-full h-full object-cover rounded-lg"
               />
-              <h2 className="pl-4 font-monoBold">Susana Porras, la Artista</h2>
+              <h2 className="pl-4 font-inter font-bold">Susana Porras, la Artista</h2>
               <p></p>
             </div>
-        </div>
+          </div>
+        <Portafolio/>
         </div>
       </main>
     </div>
