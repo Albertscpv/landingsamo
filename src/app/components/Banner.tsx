@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="relative h-72 sm:h-96 w-full">
       <Image
-        src="/3Hermanos.jpg"
+        src="/mainImages/3Hermanos.jpg"
         alt="Space galaxy banner"
         fill
         className="object-cover rounded-lg"

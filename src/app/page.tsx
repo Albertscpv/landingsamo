@@ -31,7 +31,7 @@ export default function WelcomePage() {
           {/* Image Section */}
           <div className="relative h-[400px]">
             <Image
-              src="/rocket.jpg"
+              src="/mainImages/rocket.jpg"
               alt="Rocket launch trail"
               width={600}
               height={400}
@@ -40,7 +40,7 @@ export default function WelcomePage() {
           </div>
           <div className="relative h-[500px]">
             <Image
-              src="/Arte.jpeg"
+              src="/mainImages/Arte.jpeg"
               alt="Rocket launch trail"
               width={600}
               height={500}
@@ -91,7 +91,7 @@ export default function WelcomePage() {
         <div className="grid md:grid-cols-2 gap-8 my-6">
             <div className="flex flex-col gap-4">
               <Image
-                src="/CharlaCTPE.webp"
+                src="/mainImages/CharlaCTPE.webp"
                 alt="Rocket launch trail"
                 width={600}
                 height={500}
@@ -102,7 +102,7 @@ export default function WelcomePage() {
             </div>
             <div className="flex flex-col gap-4"> 
               <Image
-                src="/SunFlowers.webp"
+                src="/mainImages/SunFlowers.webp"
                 alt="Rocket launch trail"
                 width={600}
                 height={500}
