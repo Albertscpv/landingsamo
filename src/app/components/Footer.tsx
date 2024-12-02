@@ -13,7 +13,10 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               ¡Contáctanos para que empezemos con la creación de una identidad digital maravillosa!
             </p>
-        <form action="">
+        <form 
+            action="https://formspree.io/f/xkndqpjd"
+            method="post"
+            >
             <div className="space-y-4 flex flex-col">
               <input
                 type="email"
