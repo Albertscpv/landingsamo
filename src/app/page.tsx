@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import CodeComponent from "./components/CodeComponent";
 import Portafolio from "./components/Portafolio";
-import ContactForm from "./components/Contacto";
 
 
 export default function WelcomePage() {
@@ -114,9 +113,6 @@ export default function WelcomePage() {
             </div>
           </div>
         <Portafolio/>
-        </div>
-        <div id="contacto">
-          <ContactForm/>
         </div>
       </main>
     </div>
