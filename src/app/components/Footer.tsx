@@ -28,7 +28,10 @@ export default function Footer() {
                     className="bg-white/80 p-4 rounded-lg text-black border-gray-800"
                     placeholder="your message"
                 />
-              <button className="p-4 bg-white text-black rounded-lg hover:bg-gray-700 hover:text-white transition-all duration-1000">
+              <button 
+                className="p-4 bg-white text-black rounded-lg hover:bg-gray-700 hover:text-white transition-all duration-1000"
+                type="submit"
+                >
                 Da inicio al Big Bang de tu negocio!
               </button>
             </div>

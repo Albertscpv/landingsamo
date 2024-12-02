@@ -30,6 +30,9 @@ body {
   background: var(--background);
   color: var(--text);
 }
+textarea{
+  resize: none;
+}
 
 /* custom styles */
 .custom-shadow {
