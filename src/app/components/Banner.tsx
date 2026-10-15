@@ -2,16 +2,24 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="relative h-72 sm:h-96 w-full">
+    <div className="relative h-72 sm:h-[26rem] w-full overflow-hidden">
       <Image
         src="/mainImages/3Hermanos.jpg"
-        alt="Space galaxy banner"
+        alt="Banner de Tkyo"
         fill
-        className="object-cover rounded-lg"
+        priority
+        className="object-cover"
       />
-      {/* <div className="absolute top-4 right-4 flex gap-2">
-          Posibles funciones extra
-      </div> */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-[var(--background)]/50 to-transparent" />
+      <div className="absolute bottom-8 left-6 md:left-12">
+        <p className="font-mono text-sm text-[var(--accent)] mb-2">$ ./bienvenidos</p>
+        <h1 className="font-mono text-5xl sm:text-7xl font-bold tracking-tight">
+          Tkyo<span className="text-[var(--accent)]">.</span>
+        </h1>
+        <p className="mt-2 text-gray-300 max-w-md">
+          Identidad digital para emprendedores. Noblesse oblige.
+        </p>
+      </div>
     </div>
   );
 };

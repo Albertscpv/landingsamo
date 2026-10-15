@@ -1,121 +1,144 @@
 import Image from "next/image";
-import { MicroscopeIcon } from "lucide-react";
+import {
+  Palette,
+  Globe,
+  Code2,
+  Megaphone,
+  Camera,
+  PartyPopper,
+  GraduationCap,
+  Brush,
+  Gamepad2,
+  Box,
+} from "lucide-react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import CodeComponent from "./components/CodeComponent";
 import Portafolio from "./components/Portafolio";
 
+const services = [
+  { icon: Palette, title: "Diseño Gráfico", text: "Flyers y recursos para tu negocio." },
+  { icon: Globe, title: "Diseño Web", text: "Para que te adentres en el mundo digital de una mejor manera." },
+  { icon: Code2, title: "Desarrollo de Software", text: "¿Tienes una idea para solucionar algo? Te ayudamos a crearla." },
+  { icon: Megaphone, title: "Marketing Digital", text: "Impulsa tu negocio en redes." },
+];
+
+const extras = [
+  { icon: Camera, text: "Fotografía: me estoy especializando, próximamente tendrán a Tkyo F." },
+  { icon: PartyPopper, text: "Eventos especiales, para hacer tus fechas inolvidables." },
+  { icon: GraduationCap, text: "Charlas de aprendizaje, el Dev se encargará de ello." },
+  { icon: Brush, text: "Arte, pinturas o dibujos para plasmar recuerdos de una forma preciosa." },
+  { icon: Gamepad2, text: "¿Eres gamer y haces streams? Moderadores e interfaces diseñadas." },
+  { icon: Box, text: "Figuras y diseño 3D, en algo podrían ser de utilidad." },
+];
+
+const purpose = [
+  "Ayudar a todos los emprendedores y pequeños negocios a hacerse ver en el mundo digital.",
+  "Ayudar, compartir y enseñar a todos sobre el futuro y el mundo digital.",
+  "Conocer el mundo y las cosas increíbles que esconde.",
+  "Ser una de las empresas más grandes ayudando a las personas a ser personas.",
+];
 
 export default function WelcomePage() {
   return (
     <div className="min-h-screen text-white font-inter">
-      {/* Header */}
-      <Header/>
-      {/* Banner */}
-      <Banner/>
-      {/* Main Content */}
-      <main className="p-8 font-inter">
-        <div className="mb-8 flex justify-center">
-          <MicroscopeIcon className="w-12 h-12 text-gray-400" />
-        </div>
-        <h1 className="text-4xl font-mono font-bold mb-8 text-center">Bienvenidos a Samo</h1>
-        <hr className="mb-4"/>
-        <p className="my-4">
-          Soy un emprendimiento formado por una pareja de emprendedores que buscan ayudar a las personas a poder ingresar en el mundo digital, 
-          además de otros servicios que estoy seguro les serviran a muchos.
-        </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Code Section */}
-            <CodeComponent/>
-          {/* Image Section */}
-            <div className="relative h-[400px]">
-              <Image
-                src="/mainImages/rocket.jpg"
-                alt="Rocket launch trail"
-                width={600}
-                height={400}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div className="relative h-[500px]">
-              <Image
-                src="/mainImages/Arte.jpeg"
-                alt="Rocket launch trail"
-                width={600}
-                height={500}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          <div>
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Mi propósito: </h2>
-              <hr className="mb-4"/>
-            <ul className="list-disc space-y-2 pl-6 mb-4">
-              <li>Ayudar a todos los emprendedores y pequeños negocios a hacerse ver en el mundo digital.</li>
-              <li>Help, share and teach everyone about the future and the digital world.</li>
-              <li>Knowing the world and the amazing things it hides.</li>
-              <li>Being one of the largest companies helping people to be people.</li>
-            </ul>
+      <Header />
+      <Banner />
+
+      <main className="mx-auto max-w-6xl px-6 py-12 space-y-20">
+        {/* Intro */}
+        <section className="text-center max-w-3xl mx-auto">
+          <h2 className="font-mono text-3xl sm:text-4xl font-bold mb-6">
+            Bienvenidos a Tkyo y Carpe Diem
+          </h2>
+          <p className="text-gray-400 text-lg leading-relaxed">
+            Tkyo es un emprendimiento que busca ayudar a la integración digital, mientras que
+            Carpe Diem se enfoca en la elaboración de actividades, alimentación, música y diversos
+            servicios que harán de tus actividades algo especial.
+          </p>
+        </section>
+
+        {/* Código + imagen */}
+        <section className="grid md:grid-cols-2 gap-8 items-start">
+          <CodeComponent />
+          <div className="relative h-[420px] rounded-2xl overflow-hidden border border-[var(--border)]">
+            <Image src="/mainImages/Arte.jpeg" alt="Arte" fill className="object-cover" />
           </div>
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Qué soy capaz de hacer?</h2>
-            <hr className="mb-4"/>
-              <p>Fui creado con el fin de ayudar a todas las personas que lo requieran. Entre 
-                las cosas que puedo hacer están: 
-              </p>
-              <ul className="list-disc space-y-2 pl-6 m-4">
-                <li><b>Diseño Gráfico</b>, por si quieres flyers o recursos para tu negocio.</li>
-                <li><b>Diseño Web</b>, para que te adentres en el mundo digital de una mejor manera.</li>
-                <li><b>Desarrollo de Software</b>, ¿Tienes una idea para solucionar algo y quieres ayuda para crearla?</li>
-                <li><b>Marketing Digital</b>, por si lo tuyo es impulsar tu negocio en redes.</li>
-              </ul>
-            </div>
+        </section>
+
+        {/* Propósito */}
+        <section>
+          <h2 className="section-title">Mi propósito</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {purpose.map((p, i) => (
+              <div key={p} className="card p-6 flex gap-4">
+                <span className="font-mono text-[var(--accent)] text-xl">0{i + 1}</span>
+                <p className="text-gray-300">{p}</p>
+              </div>
+            ))}
           </div>
-        </div>
-        <div className="my-4">
-            <h2 className="text-2xl font-bold mb-4">Otras cosas en las que puedo ayudarte: </h2>
-          <hr className="mb-6"/>
-            <ul className="list-disc space-y-2 pl-6 m-4">
-              <li>Fotografia, me estoy especializando, próximamente tendrán a Samo F.</li>
-              <li>Eventos especiales, para hacer tus fechas inolvidables</li>
-              <li>Charlas de aprendizaje, el <b><i>Dev</i></b> se encargará de ello.</li>
-              <li>Arte, pinturas o dibujos. Para plasmar recuerdos de una forma preciosa.</li>
-              <li>¿Eres gamer y te gusta hacer streams? Podemos ayudarte con moderadores e interfaces diseñadas.</li>
-              <li>Figuras y diseño 3D, en algo podrían ser de utilidad. </li>
-            </ul>
+        </section>
+
+        {/* Servicios */}
+        <section>
+          <h2 className="section-title">¿Qué soy capaz de hacer?</h2>
+          <p className="text-gray-400 mb-6 max-w-2xl">
+            Fui creado con el fin de ayudar a todas las personas que lo requieran. Entre las cosas
+            que puedo hacer están:
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {services.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="card p-6">
+                <Icon className="h-7 w-7 text-[var(--accent)] mb-4" />
+                <h3 className="font-bold mb-2">{title}</h3>
+                <p className="text-sm text-gray-400">{text}</p>
+              </div>
+            ))}
           </div>
-        <div>
-          <h2 className="text-2xl font-bold mb-4">Nuestro equipo: </h2>
-          <hr className="mb-6"/>
-          <p>Realmente somos un equipo pequeño, que con el tiempo irá creciendo. ¿Te gustaría formar parte?</p>
-        <div className="grid md:grid-cols-2 gap-8 my-6">
-            <div className="flex flex-col gap-4">
+        </section>
+
+        {/* Extras */}
+        <section>
+          <h2 className="section-title">Otras cosas en las que puedo ayudarte</h2>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {extras.map(({ icon: Icon, text }) => (
+              <li key={text} className="card p-5 flex gap-4 items-start">
+                <Icon className="h-5 w-5 shrink-0 mt-0.5 text-[var(--accent)]" />
+                <span className="text-sm text-gray-300">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Equipo */}
+        <section>
+          <h2 className="section-title">Nuestro equipo</h2>
+          <p className="text-gray-400 mb-8">
+            Realmente somos un equipo pequeño, que con el tiempo irá creciendo. ¿Te gustaría formar
+            parte?
+          </p>
+          <div className="card grid md:grid-cols-2 overflow-hidden max-w-3xl">
+            <div className="relative h-72 md:h-full min-h-[18rem]">
               <Image
                 src="/mainImages/CharlaCTPE.webp"
-                alt="Rocket launch trail"
-                width={600}
-                height={500}
-                className="w-full h-full object-cover rounded-lg"
+                alt="Christopher Monge"
+                fill
+                className="object-cover"
               />
-              <h2 className="pl-4 font-inter font-bold">Christopher Monge, el Dev</h2>
-              <p>Me considero una persona proactiva, que ama conversar y buscarle soluciones a problemas, algo difíciles.</p>
             </div>
-            <div className="flex flex-col gap-4"> 
-              <Image
-                src="/mainImages/SunFlowers.webp"
-                alt="Rocket launch trail"
-                width={600}
-                height={500}
-                className="w-full h-full object-cover rounded-lg"
-              />
-              <h2 className="pl-4 font-inter font-bold">Susana Porras, la Artista</h2>
-              <p></p>
+            <div className="p-6 flex flex-col justify-center">
+              <h3 className="font-mono font-bold text-xl">Christopher Monge</h3>
+              <p className="text-[var(--accent)] text-sm mb-3">el Dev</p>
+              <p className="text-gray-400">
+                Me considero una persona proactiva, que ama conversar y buscarle soluciones a
+                problemas algo difíciles.
+              </p>
             </div>
           </div>
-        <Portafolio/>
-        </div>
+        </section>
+
+        <Portafolio />
       </main>
     </div>
-  )
+  );
 }
-

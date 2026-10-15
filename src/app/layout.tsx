@@ -2,11 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
 
-
-
 export const metadata: Metadata = {
-  title: "Samo D",
-  description: "Agencia Digital en busca de ayudar a los emprendedores",
+  title: "Tkyo",
+  description: "Agencia digital en busca de ayudar a los emprendedores",
 };
 
 export default function RootLayout({
@@ -15,13 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className="font-inter">
-        <div className="">
-          {children}
-        </div>
-        <Footer/>
+    <html lang="es">
+      <body className="font-inter">
+        {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 const Welcome = () => {
     return (
       <section className="p-6 bg-gray-900 text-white">
-        <h2 className="text-3xl font-bold mb-4">Welcome to Samo</h2>
+        <h2 className="text-3xl font-bold mb-4">Welcome to Tkyo</h2>
         <pre className="bg-gray-800 p-4 rounded-lg text-sm overflow-x-auto">
   {`const Greetings = () => {
     return(

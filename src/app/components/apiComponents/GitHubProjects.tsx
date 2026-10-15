@@ -25,7 +25,7 @@ function ProjectPage(){
                         {projects.map((project: project) => (
                         <a key={project.name} href={project.html_url} target="_blank">
                             <div 
-                            className="flex items-center p-3 justify-between custom-shadow border-2 border-[#404040] rounded-md min-h-[100px]">
+                            className="card flex items-center p-5 justify-between min-h-[100px]">
                                 <div className="text-left pl-2">
                                     <p className="">{project.name}</p>
                                     <p className="text-[#A3A3A3]">{project.description}</p>

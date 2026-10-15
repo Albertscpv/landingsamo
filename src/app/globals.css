@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #191919 ;
+  --background: #0b0b0f;
   --foreground: #171717;
-  --text:#fff;
+  --surface: #14141b;
+  --border: #26262f;
+  --accent: #ff4d6d;
+  --text: #f4f4f5;
 }
 
 @font-face {
@@ -26,23 +29,42 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--text);
 }
-textarea{
+
+textarea {
   resize: none;
 }
 
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* custom styles */
-.custom-shadow {
-  @apply rounded-[25px] bg-[#191919];
-  box-shadow: inset 9px 9px 18px #0a0a0a, inset -9px -9px 18px #282828;
+.card {
+  @apply rounded-2xl border;
+  background: var(--surface);
+  border-color: var(--border);
+  transition: border-color 0.2s, transform 0.2s;
 }
 
-.custom-white {
-  @apply rounded-[25px] bg-white;
-  box-shadow: inset 9px 9px 18px #d9d9d9, inset -9px -9px 18px #ffffff;
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
+.section-title {
+  @apply font-mono text-2xl font-bold mb-6 flex items-center gap-3;
+}
 
+.section-title::before {
+  content: "//";
+  color: var(--accent);
+}

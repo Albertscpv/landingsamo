@@ -2,21 +2,19 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div>
-      <header className="flex items-center justify-between p-4 border-b border-gray-800 font-inter">
-        <div className="flex items-center gap-2 ">
-          <span className="text-gray-400">/</span>
-          <span>Samo D</span>
-        </div>
-        <div className="flex items-center gap-4 text-gray-400">
-          <Link  href="#contacto">
-            <button className="px-4 py-2 bg-white text-black rounded-lg transition-all duration-900 hover:bg-[var(--background)] hover:text-white">
-              Contactanos
-            </button>
-          </Link>
-        </div>
-      </header>
-    </div>
+    <header className="sticky top-0 z-20 flex items-center justify-between px-6 py-4 border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur font-inter">
+      <Link href="#" className="flex items-center gap-2 font-mono">
+        <span className="text-[var(--accent)]">~/</span>
+        <span className="font-bold tracking-wide">tkyo</span>
+        <span className="hidden sm:inline text-gray-500">· Carpe Diem</span>
+      </Link>
+      <Link
+        href="#contacto"
+        className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold transition-all hover:brightness-110"
+      >
+        Contáctanos
+      </Link>
+    </header>
   );
 };
 
