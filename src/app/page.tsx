@@ -49,12 +49,12 @@ export default function WelcomePage() {
         {/* Intro */}
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="font-mono text-3xl sm:text-4xl font-bold mb-6">
-            Bienvenidos a Tkyo y Carpe Diem
+            Bienvenidos a Tkyo
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
-            Tkyo es un emprendimiento que busca ayudar a la integración digital, mientras que
-            Carpe Diem se enfoca en la elaboración de actividades, alimentación, música y diversos
-            servicios que harán de tus actividades algo especial.
+            Tkyo es un emprendimiento que busca ayudar a las personas y a los negocios a
+            integrarse al mundo digital, además de ofrecer otros servicios que harán de tus
+            proyectos y actividades algo especial.
           </p>
         </section>
 

@@ -6,7 +6,6 @@ const Header = () => {
       <Link href="#" className="flex items-center gap-2 font-mono">
         <span className="text-[var(--accent)]">~/</span>
         <span className="font-bold tracking-wide">tkyo</span>
-        <span className="hidden sm:inline text-gray-500">· Carpe Diem</span>
       </Link>
       <Link
         href="#contacto"
