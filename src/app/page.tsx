@@ -17,26 +17,26 @@ import CodeComponent from "./components/CodeComponent";
 import Portafolio from "./components/Portafolio";
 
 const services = [
-  { icon: Palette, title: "Diseño Gráfico", text: "Flyers y recursos para tu negocio." },
-  { icon: Globe, title: "Diseño Web", text: "Para que te adentres en el mundo digital de una mejor manera." },
-  { icon: Code2, title: "Desarrollo de Software", text: "¿Tienes una idea para solucionar algo? Te ayudamos a crearla." },
-  { icon: Megaphone, title: "Marketing Digital", text: "Impulsa tu negocio en redes." },
+  { icon: Palette, title: "Diseño gráfico", text: "Flyers, menús, publicaciones y todo lo que tu negocio necesita para verse profesional." },
+  { icon: Globe, title: "Diseño web", text: "Sitios claros, rápidos y hechos a la medida, para que tus clientes te encuentren." },
+  { icon: Code2, title: "Desarrollo de software", text: "¿Tienes una idea o un proceso que automatizar? Lo convertimos en una aplicación." },
+  { icon: Megaphone, title: "Marketing digital", text: "Contenido y estrategia para que tu negocio se mueva en redes." },
 ];
 
 const extras = [
-  { icon: Camera, text: "Fotografía: me estoy especializando, próximamente tendrán a Tkyo F." },
-  { icon: PartyPopper, text: "Eventos especiales, para hacer tus fechas inolvidables." },
-  { icon: GraduationCap, text: "Charlas de aprendizaje, el Dev se encargará de ello." },
-  { icon: Brush, text: "Arte, pinturas o dibujos para plasmar recuerdos de una forma preciosa." },
-  { icon: Gamepad2, text: "¿Eres gamer y haces streams? Moderadores e interfaces diseñadas." },
-  { icon: Box, text: "Figuras y diseño 3D, en algo podrían ser de utilidad." },
+  { icon: Camera, text: "Fotografía de producto y de eventos. Próximamente, Tkyo F." },
+  { icon: PartyPopper, text: "Eventos especiales, con todo organizado para que solo disfrutes." },
+  { icon: GraduationCap, text: "Charlas y talleres para aprender el mundo digital sin tecnicismos." },
+  { icon: Brush, text: "Arte, pintura y dibujo para guardar tus recuerdos de forma única." },
+  { icon: Gamepad2, text: "Gamers y streamers: interfaces diseñadas y apoyo con moderación." },
+  { icon: Box, text: "Figuras y diseño 3D para ideas que necesitan forma." },
 ];
 
 const purpose = [
-  "Ayudar a todos los emprendedores y pequeños negocios a hacerse ver en el mundo digital.",
-  "Ayudar, compartir y enseñar a todos sobre el futuro y el mundo digital.",
-  "Conocer el mundo y las cosas increíbles que esconde.",
-  "Ser una de las empresas más grandes ayudando a las personas a ser personas.",
+  "Que cada emprendedor y pequeño negocio tenga un lugar digno en el mundo digital.",
+  "Compartir lo que sabemos y enseñar a otros sobre tecnología, sin barreras.",
+  "Seguir curiosos: explorar el mundo y las cosas increíbles que esconde.",
+  "Crecer ayudando a las personas a lograr lo que se proponen.",
 ];
 
 export default function WelcomePage() {
@@ -52,9 +52,9 @@ export default function WelcomePage() {
             Bienvenidos a Tkyo
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed">
-            Tkyo es un emprendimiento que busca ayudar a las personas y a los negocios a
-            integrarse al mundo digital, además de ofrecer otros servicios que harán de tus
-            proyectos y actividades algo especial.
+            Somos un estudio pequeño que ayuda a emprendedores y negocios locales a dar el salto
+            al mundo digital: diseño, desarrollo y estrategia, con trato cercano y sin
+            complicaciones.
           </p>
         </section>
 
@@ -68,7 +68,7 @@ export default function WelcomePage() {
 
         {/* Propósito */}
         <section>
-          <h2 className="section-title">Mi propósito</h2>
+          <h2 className="section-title">Nuestro propósito</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {purpose.map((p, i) => (
               <div key={p} className="card p-6 flex gap-4">
@@ -81,10 +81,10 @@ export default function WelcomePage() {
 
         {/* Servicios */}
         <section>
-          <h2 className="section-title">¿Qué soy capaz de hacer?</h2>
+          <h2 className="section-title">¿Qué hacemos?</h2>
           <p className="text-gray-400 mb-6 max-w-2xl">
-            Fui creado con el fin de ayudar a todas las personas que lo requieran. Entre las cosas
-            que puedo hacer están:
+            Nacimos para ayudar a quien lo necesite. Estos son los servicios con los que
+            podemos acompañarte:
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map(({ icon: Icon, title, text }) => (
@@ -99,7 +99,7 @@ export default function WelcomePage() {
 
         {/* Extras */}
         <section>
-          <h2 className="section-title">Otras cosas en las que puedo ayudarte</h2>
+          <h2 className="section-title">También podemos ayudarte con</h2>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {extras.map(({ icon: Icon, text }) => (
               <li key={text} className="card p-5 flex gap-4 items-start">
@@ -114,8 +114,8 @@ export default function WelcomePage() {
         <section>
           <h2 className="section-title">Nuestro equipo</h2>
           <p className="text-gray-400 mb-8">
-            Realmente somos un equipo pequeño, que con el tiempo irá creciendo. ¿Te gustaría formar
-            parte?
+            Somos un equipo pequeño y vamos creciendo poco a poco. ¿Te gustaría sumarte o trabajar
+            con nosotros?
           </p>
           <div className="card grid md:grid-cols-2 overflow-hidden max-w-3xl">
             <div className="relative h-72 md:h-full min-h-[18rem]">
@@ -130,8 +130,8 @@ export default function WelcomePage() {
               <h3 className="font-mono font-bold text-xl">Christopher Monge</h3>
               <p className="text-[var(--accent)] text-sm mb-3">el Dev</p>
               <p className="text-gray-400">
-                Me considero una persona proactiva, que ama conversar y buscarle soluciones a
-                problemas algo difíciles.
+                Proactivo y conversador. Me gusta entender bien el problema de cada cliente y buscarle
+                una solución que funcione de verdad.
               </p>
             </div>
           </div>

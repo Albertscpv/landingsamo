@@ -17,7 +17,7 @@ const Banner = () => {
           Tkyo<span className="text-[var(--accent)]">.</span>
         </h1>
         <p className="mt-2 text-gray-300 max-w-md">
-          Identidad digital para emprendedores. Noblesse oblige.
+          Diseño, desarrollo y estrategia para emprendedores que quieren crecer en digital.
         </p>
       </div>
     </div>

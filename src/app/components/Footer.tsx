@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <h2 className="section-title">¡Hablemos!</h2>
           <p className="text-gray-400 max-w-md">
-            ¡Contáctanos para que empecemos con la creación de una identidad digital maravillosa!
+            Cuéntanos tu idea y empecemos a construir juntos la identidad digital de tu negocio.
           </p>
         </div>
 
@@ -27,13 +27,13 @@ export default function Footer() {
               name="message"
               rows={4}
               className="bg-[var(--background)] border border-[var(--border)] focus:border-[var(--accent)] outline-none p-4 rounded-lg text-white"
-              placeholder="tu mensaje"
+              placeholder="¿En qué podemos ayudarte?"
             />
             <button
               className="p-4 bg-[var(--accent)] text-white font-semibold rounded-lg hover:brightness-110 transition-all"
               type="submit"
             >
-              ¡Da inicio al Big Bang de tu negocio!
+              Enviar mensaje
             </button>
           </div>
         </form>
