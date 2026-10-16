@@ -15,17 +15,17 @@ const CodeComponent = () => {
           {"\n"}    {"<>"}
           {"\n"}      {"<h2>"}Saludos a todos, {"</h2>"}
           {"\n"}      {"<p>"}
-          {"\n"}        En este lugar encontrarás las cosas que nos identifican
-          {"\n"}        y por lo que
-          {"\n"}        estaremos trabajando durante el tiempo que decidan
-          {"\n"}        darme su confianza.
+          {"\n"}        Aquí encontrarás lo que nos define
+          {"\n"}        y aquello en lo que
+          {"\n"}        trabajaremos mientras nos regales
+          {"\n"}        tu confianza.
           {"\n"}
-          {"\n"}        ¿Por qué me refiero a Tkyo como si fuese alguien?
+          {"\n"}        ¿Por qué hablamos de Tkyo como si fuera alguien?
           {"\n"}
-          {"\n"}        Hemos decidido que haremos de Tkyo algo más que un
-          {"\n"}        simple nombre, lo haremos una referencia y
+          {"\n"}        Porque queremos que sea más que un
+          {"\n"}        nombre: una referencia de trabajo bien hecho.
           {"\n"}
-          {"\n"}        Como lo dice la frase:
+          {"\n"}        Nuestro lema:
           {"\n"}      {"</p>"}
           {"\n"}      {"<span>"}
           {"\n"}        <span className="text-[var(--accent)]">Noblesse Oblige</span>

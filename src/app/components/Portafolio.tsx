@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Github } from "lucide-react";
 import { projects, soda506 } from "@/app/data/projects";
 
@@ -30,7 +31,7 @@ const Portafolio = () => {
       </div>
 
       {/* Desarrollo */}
-      <h3 className="font-mono text-lg font-bold mb-4">Desarrollo y producto</h3>
+      <h3 className="font-mono text-lg font-bold mb-4">Herramientas para tu negocio</h3>
       <div className="grid md:grid-cols-2 gap-4">
         {projects.map((p) => (
           <article key={p.name} className="card p-6 flex flex-col gap-4">
@@ -40,7 +41,10 @@ const Portafolio = () => {
                 {p.status}
               </span>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">{p.blurb}</p>
+            <p className="text-xs uppercase tracking-wide text-gray-500">
+              Problema: <span className="normal-case tracking-normal text-gray-400">{p.problem}</span>
+            </p>
+            <p className="text-sm text-gray-300 leading-relaxed">{p.blurb}</p>
             <ul className="flex flex-wrap gap-2">
               {p.stack.map((s) => (
                 <li
@@ -52,16 +56,24 @@ const Portafolio = () => {
               ))}
             </ul>
             <div className="mt-auto flex gap-4 text-sm">
-              {p.demo && (
-                <a
-                  href={p.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 hover:text-[var(--accent)]"
-                >
-                  Ver sitio <ArrowUpRight className="h-4 w-4" />
-                </a>
-              )}
+              {p.demo &&
+                (p.demo.startsWith("/") ? (
+                  <Link
+                    href={p.demo}
+                    className="inline-flex items-center gap-1 hover:text-[var(--accent)]"
+                  >
+                    Probar demo <ArrowUpRight className="h-4 w-4" />
+                  </Link>
+                ) : (
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-[var(--accent)]"
+                  >
+                    Ver sitio <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                ))}
               {p.repo && (
                 <a
                   href={p.repo}

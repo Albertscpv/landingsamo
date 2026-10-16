@@ -39,6 +39,13 @@ const purpose = [
   "Crecer ayudando a las personas a lograr lo que se proponen.",
 ];
 
+const steps = [
+  { title: "Escuchamos", text: "Entendemos cómo funciona tu negocio y qué te quita tiempo antes de proponer nada." },
+  { title: "Proponemos", text: "Te decimos qué hacer primero, cuánto cuesta y cuánto tarda, sin letra pequeña." },
+  { title: "Construimos", text: "Entregamos por etapas para que veas avances reales y puedas opinar en el camino." },
+  { title: "Acompañamos", text: "Te enseñamos a usarlo y seguimos disponibles cuando tu negocio crezca." },
+];
+
 export default function WelcomePage() {
   return (
     <div className="min-h-screen text-white font-inter">
@@ -110,6 +117,20 @@ export default function WelcomePage() {
           </ul>
         </section>
 
+        {/* Proceso */}
+        <section>
+          <h2 className="section-title">Cómo trabajamos</h2>
+          <ol className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {steps.map((step, i) => (
+              <li key={step.title} className="card p-6">
+                <span className="font-mono text-[var(--accent)]">0{i + 1}</span>
+                <h3 className="font-bold mt-2 mb-2">{step.title}</h3>
+                <p className="text-sm text-gray-400">{step.text}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
         {/* Equipo */}
         <section>
           <h2 className="section-title">Nuestro equipo</h2>
@@ -128,9 +149,9 @@ export default function WelcomePage() {
             </div>
             <div className="p-6 flex flex-col justify-center">
               <h3 className="font-mono font-bold text-xl">Christopher Monge</h3>
-              <p className="text-[var(--accent)] text-sm mb-3">el Dev</p>
+              <p className="text-[var(--accent)] text-sm mb-3">Desarrollador y contador</p>
               <p className="text-gray-400">
-                Proactivo y conversador. Me gusta entender bien el problema de cada cliente y buscarle
+                Desarrollo full stack con formación contable: leo un negocio como leo un código. Me gusta entender bien el problema de cada cliente y buscarle
                 una solución que funcione de verdad.
               </p>
             </div>

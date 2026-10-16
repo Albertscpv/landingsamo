@@ -14,6 +14,11 @@ como demo publicada y también como oferta de servicio.
 | 6 | **Kit de marca para redes** | Logo, paleta y 10 plantillas editables para que publiques con identidad propia. | Trabajo de Soda 506 | Cualquier negocio nuevo |
 | 7 | **Panel de ventas simple** | Registra ventas del día y mira tus números sin Excel. | Hex App + Firebase | Negocios pequeños con caja manual |
 
+## Ya construido
+
+- **Menú digital con pedido por WhatsApp**: demo en `/demos/menu` con el menú real de Soda 506.
+- **Control de ventas y gastos** (versión mínima del panel de ventas): demo en `/demos/caja`.
+
 ## Orden sugerido
 
 1. **Menú digital con QR** y **Pedidos por WhatsApp**: el mercado más cercano
